@@ -1,4 +1,21 @@
 /*Estilos ejercicio 1 NO MODIFICAR*/
+#Data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor{
+    margin: 0 auto;
+    width: 50%;
+
+
+}
+.banderas{
+    text-align: center;
+    justify-self: center;
+}
+
+
 #ejercicio1 .contenedor {
     width: 25%;
 }

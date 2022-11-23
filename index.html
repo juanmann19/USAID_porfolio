@@ -7,33 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto banderas</title>
     <link rel="stylesheet" href="css/style-ejercicio1-resuelto.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>Trabajando con banderas</h1>
-    <article id="ejercicio1">
-        <h2>Ejercicio 1: Guatemala</h2>
-        <div class="contenedor">
-            <div class="parte1"></div>
-            <div class="parte3"></div>
-            <div class="parte2"><img src="img/guatemala.png" alt="Escudo Guatemala"></div>
-        </div>
-    </article>
+    <div id="Data">
+        <h1>Proyecto Banderas</h1>
+        <h2>Juan Manuel Garcia Morales</h2>
+        <fieldset>
+            <legend>Seleccione la bandera a utilizar: </legend>
+            <label for="">Seleccionar bandera: </label>
+            <select name="Pais" id="pais" onchange="mostrar()">
+                <option value="0" selected>Seleccione</option>
+                <option value="1">Guatemala</option>
+                <option value="2">India</option>
+                <option value="3">Paises Bajos</option>
+                <option value="4">Suecia</option>
+                <option value="5">Suiza</option>
+            </select>
+            
+        </fieldset>
+    </div>
+    <div id="Ejercicios">
 
-    <article id="ejercicio2">
-        <h2>Ejercicio 2: Níger, India</h2>
-        <div class="contenedor">
-            <div class="parte1"></div>
-            <div class="parte2"></div>
-            <div class="parte3"></div>
-            <div class="parte4"></div>
-            <div class="parte5"><img src="img/niger.png" alt="Emblema Níger"></div>
-            <div class="parte6"><img src="img/india.png" alt="Emblema India"></div>
-            <div class="parte7"></div>
-        </div>
-    </article>
+        <article id="ejercicio1" class="banderas">
+            <h2>Ejercicio 1: Guatemala</h2>
+            <div class="contenedor">
+                <div class="parte1"></div>
+                <div class="parte3"></div>
+                <div class="parte2"><img src="img/guatemala.png" alt="Escudo Guatemala"></div>
+            </div>
+        </article>
+        
+        <article id="ejercicio2" class="banderas">
+            <h2>Ejercicio 2: Níger, India</h2>
+            <div class="contenedor">
+                <div class="parte1"></div>
+                <div class="parte2"></div>
+                <div class="parte3"></div>
+                <div class="parte4"></div>
+                <div class="parte5"><img src="img/niger.png" alt="Emblema Níger"></div>
+                <div class="parte6"><img src="img/india.png" alt="Emblema India"></div>
+                <div class="parte7"></div>
+            </div>
+        </article>
 
-    <article id="ejercicio3">
+    <article id="ejercicio3" class="banderas">
         <h2>Ejercicio 3: Paises Bajos, Francia</h2>
         <div class="contenedor">
             <div id="bajos">
@@ -47,10 +66,10 @@
                 <div class="parte6"></div>
             </div>
             <div class="parte7"></div>
-
+            
         </div>
     </article>
-    <article id="ejercicio4">
+    <article id="ejercicio4" class="banderas">
         <h2>Ejercicio 4: Suecia</h2>
         <div class="contenedor">
             <div id="superior">
@@ -66,8 +85,8 @@
             </div>
         </div>
     </article>
-
-    <article id="ejercicio5">
+    
+    <article id="ejercicio5" class="banderas">
         <h2>Ejercicio 5: Suiza</h2>
         <div class="contenedor">
             <div class="parte1"></div>
@@ -75,6 +94,7 @@
             <div class="parte3"></div>
         </div>
     </article>
+</div>
 </body>
 
 </html>
