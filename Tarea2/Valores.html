@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <!--bootstrap Nav-->
+    
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JuanTech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Banderas.html">Banderas</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ValoresJS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    <!--Fin Nav-->
+    <center>
+        <h1>Manipular el DOM con JS</h1>
+        <h2>Juan Manuel Garcia Morales</h2>
+        <form action="" method="get" id="form__main">
+            <fieldset id="group__valores">
+                <legend>Cambiando valores</legend>
+                <ul>
+                    <li>
+                    <label for="">Seleccione color de fondo: </label>
+                    <input type="color" value="#ff0000" id="fondo">
+                </li>
+                <li>
+                    <label for="">Seleccione color de letra: </label>
+                    <input type="color" value="#00ff00" id="fuente">
+                </li>
+                <li>
+                    <label for="">Seleccione tamano de fuente: </label>
+                    <input type="range" oninput="CambiarTamano()" name="" id="tamano" id="tamano" min="1" max="50" value="25">
+                </li>
+            </ol>
+        </fieldset>
+        <div id="test">
+            
+            <fieldset id="group__vista">
+                <legend >
+                    Vista Previa
+                </legend>
+                <label for="" id="texto_prueba">Texto de prueba</label>
+            </fieldset>
+            <div id="acciones">
+                <input type="button" value="Aplicar cambios" class="boton" onclick="AplicarCambios()">
+                <input type="button" value="Revertir cambios" class="boton" onclick="RevertirCambios()">
+            </div>
+        </div>
+    </form>
+</center>
+
+</body>
+</html>

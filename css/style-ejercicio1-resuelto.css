@@ -1,4 +1,7 @@
 /*Estilos ejercicio 1 NO MODIFICAR*/
+body{
+    font-family: 'Raleway', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #Data{
     display: flex;
     flex-direction: column;

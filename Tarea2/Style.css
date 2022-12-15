@@ -1,0 +1,44 @@
+
+#form__main{
+    width: 35vw;
+    align-items: center;
+}
+
+#group__valores{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#group__valores ul{
+    list-style: none;
+    margin: 10px;
+}
+
+#group__valores ul li{
+
+    margin: 10px;
+}
+
+#test{
+    margin-top: 10px;
+    display: flex;
+}
+
+#group__vista{
+    display: inline-block;
+    width: 30%;
+}
+
+#acciones{
+    padding-top: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boton{
+    margin: 2px;
+    height: 50%
+}
+
